@@ -25,10 +25,6 @@
 
 <br>
 
-![Layout](kaboo2.png)
-
-<br>
-
 
 
 <h3>Contact Me:</h3>
