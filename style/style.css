@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+
+
+
+
+
+
+
+/* -----------------------------------------------------
+--------------------------Global------------------------
+----------------------------------------------------- */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+a,
+button,
+input,
+textarea {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+body {
+    color: #232323;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+}
+
+body * {
+    background-attachment: scroll;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 25px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media (max-width:768px) {
+    .container {
+        max-width: 1180px;
+        padding: 0 15px;
+    }
+}
+
+.flex-wrap {
+    display: flex;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------
+------------------------Template------------------------
+----------------------------------------------------- */
+.btn {
+    background: #602844;
+    padding: 15px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+    max-width: 100%;
+    width: 100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.btn.big {
+    padding: 23px 10px;
+}
+
+.btn:hover {
+    box-shadow: 0 7px 14px rgba(0, 0, 0, .3);
+    transform: translateY(-4px);
+}
+
+.simple-input {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    border: 1px solid transparent;
+    background-color: none;
+    width: 100%;
+    padding: 13px 25px;
+    background: #F3F2F1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: #C6C1BA;
+    font-family: 'Proxima Nova';
+}
+
+textarea {
+    resize: none;
+    height: 82px;
+}
+
+textarea:focus,
+input:focus {
+    border-color: none;
+}
+
+textarea::placeholder,
+input::placeholder {
+    opacity: .7;
+    transition: .3s;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    opacity: 0;
+}
+
+
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom:1px solid #ccc;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav li + li{
+    margin-left: 15px;
+}
+
+.nav li a:hover{
+    text-decoration: underline;
+}
+
+.items-title{
+    margin-top:20px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    padding-bottom: 30px;
+}
+
+.item-wrap{
+    padding: 10px;
+    width: 25%;
+}
+
+.item{
+    padding: 20px;
+    font-size: 18px;
+    border:1px solid #999;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item.unactive{
+    opacity: .3;
+    cursor: default;
+}
+
+.item:not(.unactive):hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.page-title{
+    text-align: center;
+    margin-top: 30px;
+}

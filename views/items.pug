@@ -1,0 +1,4 @@
+.items
+    each item in items
+        .item-wrap
+            div(class=`item ${item.id > 5 ? 'unactive' : ''}`)= item.title 
