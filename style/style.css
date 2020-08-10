@@ -122,7 +122,7 @@ input[type=number] {
 ------------------------Template------------------------
 ----------------------------------------------------- */
 .btn {
-    background: #602844;
+    background: #41cbc7;
     padding: 15px 10px;
     text-align: center;
     cursor: pointer;
@@ -136,6 +136,7 @@ input[type=number] {
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: center;
+    border-radius: 5px;
 }
 
 .btn.big {
@@ -143,8 +144,7 @@ input[type=number] {
 }
 
 .btn:hover {
-    box-shadow: 0 7px 14px rgba(0, 0, 0, .3);
-    transform: translateY(-4px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 
 .simple-input {
@@ -156,18 +156,19 @@ input[type=number] {
 
 input,
 textarea {
-    border: 1px solid transparent;
+    border: 1px solid #ccc;
     background-color: none;
     width: 100%;
-    padding: 13px 25px;
-    background: #F3F2F1;
+    padding: 12px;
+    background: none;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 16px;
     letter-spacing: -0.01em;
+    border-radius: 5px;
     color: #C6C1BA;
-    font-family: 'Proxima Nova';
+    font-family: 'Montserrat';
 }
 
 textarea {
@@ -195,22 +196,30 @@ textarea:focus::placeholder {
 
 
 
-
 .header{
+    background: #333;
+    padding: 15px 0;
+    margin-bottom: 50px;
+}
+
+.header .flex-wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
-    border-bottom:1px solid #ccc;
 }
 
 .logo{
     font-size: 20px;
     font-weight: 700;
+    color:#fff;
 }
 
 .nav{
     display: flex;
+}
+
+.nav li a{
+    color:#fff;
 }
 
 .nav li + li{
@@ -221,50 +230,40 @@ textarea:focus::placeholder {
     text-decoration: underline;
 }
 
-.items-title{
-    margin-top:20px;
-    margin-bottom: 30px;
-    font-size: 22px;
-    text-align: center;
-    text-transform: uppercase;
-}
 
-.items{
+
+
+
+
+
+.form-section .container{
     display: flex;
-    flex-wrap: wrap;
-    margin: -10px;
-    padding-bottom: 30px;
-}
-
-.item-wrap{
-    padding: 10px;
-    width: 25%;
-}
-
-.item{
-    padding: 20px;
-    font-size: 18px;
-    border:1px solid #999;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .2s;
-    height: 100%;
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-.item.unactive{
-    opacity: .3;
-    cursor: default;
+.gen-form{
+    max-width: 500px;
+    width: 100%;
 }
 
-.item:not(.unactive):hover{
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
-}
-
-.page-title{
+.form-title{
     text-align: center;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color:#41cbc7;
+}
+
+.my-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+    margin-right: 20px;
+}
+
+.file-input{
+    display: flex;
+    border:none;
+    align-items: center;
 }

@@ -1,0 +1,19 @@
+.form-section
+    .container
+        form(class="gen-form", method="post")
+            .form-title Generate to PDF
+
+            .simple-input
+                input(type="text", placeholder="Name" class="pdf-title" name="name" value="Kirill Nasenok")
+
+            .simple-input
+                textarea(placeholder="Text" class="pdf-text" name="text") New text for my example
+
+            .simple-input.file-input
+                img(src="img/img.png" class="my-img")
+                input(type="file", placeholder="Image", class="file-input" name="img")
+
+            .simple-input
+                input(type="number", placeholder="Price" class="pdf-price" name="price" value="25000")
+
+            button.form-btn.btn Generate

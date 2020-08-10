@@ -2,7 +2,7 @@
     <img src="https://img.icons8.com/bubbles/100/000000/rocket.png" width="100" height="100">
 </p>
 
-<h1 align="center">Pug Template</h1>
+<h1 align="center">PDF Generator</h1>
 
 [![Forks][forks-shield]][forks-url]
 [![Issues][issues-shield]][issues-url]
@@ -17,7 +17,7 @@
 ### How To Use
 + Clone this repo to your computer
 + "npm install" to install necessary modules
-+ "npm run dev" to run front-end and back-end(on port 3000 and 5000)
++ "nodemon server" to run back-end(on port 5000)
 
 <hr>
 
@@ -52,9 +52,9 @@
 
 
 
-[forks-shield]: https://img.shields.io/github/forks/kaboobear/Mail-Service?style=flat-square
-[forks-url]: https://github.com/kaboobear/Mail-Service/network/members
-[issues-shield]: https://img.shields.io/github/issues/kaboobear/Mail-Service.svg?style=flat-square
-[issues-url]: https://github.com/kaboobear/Mail-Service/issues
-[license-shield]: https://img.shields.io/github/license/kaboobear/Mail-Service.svg?style=flat-square
-[license-url]: https://github.com/kaboobear/Mail-Service/blob/master/LICENSE.txt
+[forks-shield]: https://img.shields.io/github/forks/kaboobear/Node-PDF-Generator?style=flat-square
+[forks-url]: https://github.com/kaboobear/Node-PDF-Generator/network/members
+[issues-shield]: https://img.shields.io/github/issues/kaboobear/Node-PDF-Generator.svg?style=flat-square
+[issues-url]: https://github.com/kaboobear/Node-PDF-Generator/issues
+[license-shield]: https://img.shields.io/github/license/kaboobear/Node-PDF-Generator.svg?style=flat-square
+[license-url]: https://github.com/kaboobear/Node-PDF-Generator/blob/master/LICENSE.txt
